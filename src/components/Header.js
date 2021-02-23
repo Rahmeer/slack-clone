@@ -30,7 +30,7 @@ const HeaderRight = styled.div`
   display: flex;
   flex: 0.3;
   align-items: flex-end;
-  > .MuiSvgIcon-root {
+  .MuiSvgIcon-root {
     margin-left: auto;
     margin-right: 20px;
   }

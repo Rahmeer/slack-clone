@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { db } from '../firebase';
 import { useDispatch } from 'react-redux';
-import enterRoom from '../features/appSlice';
+import { enterRoom } from '../features/appSlice';
 
 function SidebarOption({ Icon, title, addChannelOption, id }) {
   const dispatch = useDispatch();
@@ -43,6 +43,7 @@ function SidebarOption({ Icon, title, addChannelOption, id }) {
 }
 
 export default SidebarOption;
+
 const SidebarOptionContainer = styled.div`
   display: flex;
   font-size: 12px;
@@ -61,6 +62,7 @@ const SidebarOptionContainer = styled.div`
   }
 `;
 const SidebarOptionChannel = styled.h3`
-  padding: 10;
-  font-weight: 400;
+  padding: 10px 0;
+  font-weight: 300;
+  width: 60%;
 `;
